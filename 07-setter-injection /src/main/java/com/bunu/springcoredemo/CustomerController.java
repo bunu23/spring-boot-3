@@ -6,13 +6,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class CustomerController {
     private CustomerService customerService;
-    public void setCustomerController(CustomerService customerService){
-        this.customerService=customerService;
+
+    public void setCustomerController(CustomerService customerService) {
+        this.customerService = customerService;
+
     }
 
-
     @GetMapping("/add")
-    public String addCustomer(){
+    public String addCustomer() {
         customerService.addCustomer();
         return "Customer added successfully!";
     }

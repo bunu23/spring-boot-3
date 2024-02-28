@@ -5,8 +5,8 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class CustomerService {
-   public String addCustomer(){
-       return "Customer successfully added!";
-   }
+    public String addCustomer() {
+        return "Customer successfully added!!";
+    }
 
 }

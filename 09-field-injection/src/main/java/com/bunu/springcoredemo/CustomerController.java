@@ -9,11 +9,10 @@ public class CustomerController {
     @Autowired
     private CustomerService customerService;
 
-
     @GetMapping("/add")
-    public String addCustomer(){
+    public String addCustomer() {
         customerService.addCustomer();
-        return "Customer added successfully!";
+        return "Customer added successfully!!";
     }
 
 }
